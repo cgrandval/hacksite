@@ -1,0 +1,17 @@
+{% extends 'UnsecureBundle::layout.html.twig' %}
+
+{% block header %}
+    <div class="page-header">
+        <h1>Les articles</h1>
+    </div>
+{% endblock %}
+
+{% block index %}
+    <p>{{article|nl2br}}</p>
+    <br />
+    <a href="{{ path('unsecure_article')}}?fileName=bulabulabula.txt">Bulabulabula</a>
+    <br />
+    <a href="{{ path('unsecure_article')}}?fileName=yesYouCan.txt">Yes you can</a>
+    <br />
+    <br />
+{% endblock index %}

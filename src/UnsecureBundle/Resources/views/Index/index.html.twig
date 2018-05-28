@@ -1,0 +1,49 @@
+{% extends 'UnsecureBundle::layout.html.twig' %}
+
+{% block wide %}            
+	<div class="wide">
+    	<div class="col-xs-12 logo">Добро пожаловать на новый сайт нашего города</div>
+	</div>
+{% endblock %}
+
+{% block header %}
+    <div class="page-header">
+        <h1>Последние новости</h1>
+    </div>
+{% endblock %}
+
+{% block index %}
+	<div class="col-xs-5" style="text-align: center;">
+		<img src="/ivanovitch.jpg" width="350" height="350" />
+		<p style="text-align: left; margin-top: 20px;">
+	    	<a class="readmore" href="">
+	        	<time class="readmore">18/08/2016 08:16</time>
+	        	В ходе одного из этапов ед шэа 25/08/2016 рыбюм мэнтётюм через громкоговорители призывал «ельлюд нихйл долорэж». рэформйданч прё но! Вы дэчырюёжжэ не! йн, омнэжквюы алёквюам ... Бросайте оружие, ыюм но мандамюч дйжпютандо!
+	        </a>
+	    </p>
+	    <footer style="border-bottom: 1px solid #ddd; padding-bottom: 30px;">полностью Турции</footer>
+	    
+	    <img style="margin-top: 20px;" src="/ruska.jpg" width="350" height="350" />
+		<p style="text-align: left; margin-top: 20px;">
+	    	<a class="readmore" href="">
+	        	<time class="readmore">10/08/2016 17:00</time>
+	        	Еюж жплэндидэ майыжтатйж инкедыринт ут. Вяш ут мэльиорэ ылоквюэнтиам. Шэа тантаз мандамюч йн, ыюм эи ырант либриз докэндё. Жольюта пхаэдрум прё йн, фырре прима жкряпшэрит дуо ан. Квюандо долорэж ут нам, нонумй жольюта патриоквюы ты вяш.
+	        </a>
+	    </p>
+	    <footer>полностью Турции</footer>
+	</div>
+	<div class="col-xs-7">
+	    {% for subject in subjects %}
+	        <blockquote>
+	            <p>
+	            	<a class="readmore" href="{{ path('unsecure_subject', { subjectId: subject.id }) }}">
+	                	<time class="readmore">{{ subject.creationDate|date("d/m/Y H:i") }}</time>
+	                	{{ subject.text|slice(0, 110) }}
+	                </a>
+	            </p>
+	            <footer>{{ subject.user.firstName }} {{ subject.user.lastName }}</footer>
+	        </blockquote>
+	        <hr />
+	    {% endfor %}
+	</div>
+{% endblock index %}

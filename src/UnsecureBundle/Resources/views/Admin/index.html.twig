@@ -1,0 +1,48 @@
+{% extends 'UnsecureBundle::layout.html.twig' %}
+
+{% block wide %}            
+	<div class="wide" style="background-image: url('/ruska.jpg'); background-position: center; height: 500px;"></div>
+{% endblock %}
+
+{% block header %}
+	<div class="page-header">
+        <h1>администрация</h1>
+    </div>
+{% endblock %}
+
+{% block index %}
+
+    <div class="table-responsive" style="margin-top: 50px;">
+        <table class="table table-hover">
+            <thead>
+                <th>Войти</th>
+                <th>имя</th>
+                <th>имя</th>
+                <th>электронная почта</th>
+                <th>Дата создания</th>
+            </thead>
+            <tbody style="padding-top: 20px;">
+                {% for user in users %}
+                    <tr data-toggle="collapse" data-target="#subjects-{{ user.id }}" class="accordion-toggle warning">
+                        <td style="background-color: #ffb0b0;">{{ user.pseudo }}</td>
+                        <td style="background-color: #ffb0b0;">{{ user.lastName }}</td>
+                        <td style="background-color: #ffb0b0;">{{ user.firstName }}</td>
+                        <td style="background-color: #ffb0b0;">{{ user.email }}</td>
+                        <td style="background-color: #ffb0b0;">{{ user.creationDate|date("d/m/Y H:i") }}</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" class="hiddenRow">
+                            <div class="accordion-body collapse" id="subjects-{{ user.id }}">
+                                {% for subject in user.subjects %}
+                                    <p><b>{{ subject.creationDate|date("d/m/Y H:i") }}</b> : {{ subject.text|nl2br }}</p>
+                                    <br />
+                                {% endfor %}
+                            </div>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    
+{% endblock index %}

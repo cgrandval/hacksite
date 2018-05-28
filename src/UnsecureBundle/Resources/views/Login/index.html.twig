@@ -1,0 +1,14 @@
+{% extends 'UnsecureBundle::layout.html.twig' %}
+
+{% block wide %}                
+{% endblock %}
+
+{% block header %}
+    <div class="page-header">
+        <h1>Войдите в свой аккаунт</h1>
+    </div>
+{% endblock %}
+
+{% block index %}
+{{ form(loginForm) }}
+{% endblock index %}

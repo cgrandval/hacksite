@@ -1,0 +1,33 @@
+unsecure_homepage:
+    path:     /
+    defaults: { _controller: UnsecureBundle:Index:index }
+    
+unsecure_subject:
+    path:     /subject/{subjectId}
+    defaults: { _controller: UnsecureBundle:Index:subject }
+#    requirements:
+#        subjectId: \d+
+
+unsecure_admin:
+    path:     /admin
+    defaults: { _controller: UnsecureBundle:Admin:index }
+
+unsecure_loginpage:
+    path:     /login
+    defaults: { _controller: UnsecureBundle:Login:index }
+
+unsecure_logout:
+    path:     /logout
+    defaults: { _controller: UnsecureBundle:Login:logout }
+
+unsecure_contact:
+    path:     /contact
+    defaults: { _controller: UnsecureBundle:Contact:index }
+    
+unsecure_press:
+    path:     /press
+    defaults: { _controller: UnsecureBundle:Article:index }
+
+unsecure_mynews:
+    path:     /my-news
+    defaults: { _controller: UnsecureBundle:Index:myNews }

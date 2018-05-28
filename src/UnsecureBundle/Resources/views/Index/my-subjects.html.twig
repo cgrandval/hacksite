@@ -1,0 +1,35 @@
+{% extends 'UnsecureBundle::layout.html.twig' %}
+
+{% block wide %}            
+	<div class="wide" style="background-image: url('/writing.jpg');">
+		<div class="col-xs-12 logo">Мои статьи</div>
+	</div>
+{% endblock %}
+
+{% block header %}
+{% endblock header %}
+                
+{% block index %}
+    {% if subjectForm is null %}
+        <p><a href="{{ path('unsecure_loginpage') }}">Вход </a> писать статьи или оставлять комментарии</p>
+    {% else %}
+        <h2>Новая статья</h2>
+        <div class="col-xs-5">
+			{{ form(subjectForm) }}        
+        </div>
+        <div class="col-xs-7">
+	        {% for subject in subjects %}
+	            <blockquote>
+	                <p>
+	                    {{ subject.text }}
+	                </p>
+	                <p>
+	                	{{ subject.creationDate|date("d/m/Y H:i") }} - 
+	                    <a href="{{ path('unsecure_subject', { subjectId: subject.id }) }}">изменять</a>
+	                </p>
+	            </blockquote>
+	            <hr />
+	        {% endfor %}
+	    </div>
+    {% endif %}
+{% endblock index %}

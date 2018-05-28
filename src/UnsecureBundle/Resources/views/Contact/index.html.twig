@@ -1,0 +1,14 @@
+{% extends 'UnsecureBundle::layout.html.twig' %}
+
+{% block header %}
+    <div class="page-header">
+        <h1>Связаться с нами</h1>
+        <p>
+        	Вяш ан тантаз мюнырэ, йн дикунт пыртенакж еюж. Нам ут апэряря патриоквюы. <strong>Жят нонумй мэнтётюм компрэхэнжам эю, нонумй ножтро инзтруктеор квюо но.</strong><br/><br/>Ыльит попюльо эож экз, клита хомэро эрепюят мыа экз. 
+        </p>
+    </div>
+{% endblock %}
+
+{% block index %}
+    {{ form(contactForm) }}
+{% endblock index %}

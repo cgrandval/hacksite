@@ -1,0 +1,44 @@
+{% extends 'UnsecureBundle::layout.html.twig' %}
+
+{% block wide %}                
+{% endblock %}
+
+{% block header %}
+    <div class="page-header">
+        <h1>автор статьи</h1>
+    </div>
+{% endblock %}
+
+{% block index %}
+
+<p class="lead">
+    {{ subject.text|nl2br }}
+</p>
+<p>
+	<footer>
+		<time class="readmore">{{ subject.creationDate|date("d/m/Y H:i") }}</time> -
+		{{ subject.firstName }} {{ subject.lastName }}
+	</footer>
+</p>
+<br />
+<br />
+
+{% if sessionUser is not null %}
+    {{ form(commentForm) }}
+    <br />
+    <br />
+{% endif %}
+
+{% for comment in comments %}
+    <blockquote>
+        <p>
+            {{ comment.text|raw|nl2br }}
+        </p>
+        <footer>
+        	<time datetime="{{ comment.creationDate|date('d/m/Y H:i') }}">{{ comment.creationDate|date('d/m/Y H:i') }}</time> - {{ comment.user.firstName }} {{ comment.user.lastName }}
+        </footer>
+    </blockquote>
+{% endfor %}
+    
+
+{% endblock index %}

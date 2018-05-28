@@ -1,0 +1,38 @@
+services:
+    unsecure.repository.session:
+        class: Doctrine\ORM\EntityRepository
+        factory_service: doctrine.orm.entity_manager
+        factory_method: getRepository
+        arguments:
+            - UnsecureBundle\Entity\Session
+            
+    unsecure.repository.user:
+        class: Doctrine\ORM\EntityRepository
+        factory_service: doctrine.orm.entity_manager
+        factory_method: getRepository
+        arguments:
+            - UnsecureBundle\Entity\User
+            
+    unsecure.session:
+        class: UnsecureBundle\Service\SessionService
+        arguments:
+            - @request_stack
+            - @unsecure.repository.session
+            - @unsecure.repository.user
+        tags:
+            - { name: kernel.event_listener, event: kernel.controller, method: onKernelController }
+            - { name: kernel.event_listener, event: kernel.response, method: onKernelResponse }
+            
+    unsecure.login:
+        class: UnsecureBundle\Service\LoginService
+        arguments:
+            - @unsecure.repository.user
+            
+    unsecure.listener.add_session_data_twig_global:
+        class: UnsecureBundle\Listener\AddSessionDataTwigGlobal
+        arguments:
+            - @unsecure.session
+            - @twig
+        tags:
+            - { name: kernel.event_listener, event: kernel.controller, method: onKernelController }
+            

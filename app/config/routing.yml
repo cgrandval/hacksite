@@ -1,0 +1,3 @@
+unsecure:
+    resource: "@UnsecureBundle/Resources/config/routing.yml"
+    prefix:   /

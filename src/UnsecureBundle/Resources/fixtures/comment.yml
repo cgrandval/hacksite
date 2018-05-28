@@ -1,0 +1,97 @@
+model: UnsecureBundle\Entity\Comment
+fixtures:
+    comment-1:
+        user: user-michel-lb
+        subject: subject-1
+        text: pourquoi c 1 koala ton image?
+        creationDate: "2011-02-12 23:28:56"
+        
+    comment-2:
+        user: user-joe
+        subject: subject-1
+        text: C'est un peu la loose ta life . Moi j'ai trop de la chance comparé à toi !
+        creationDate: "2015-05-12 23:28:56"
+        
+    comment-3:
+        user: user-tyler-durden
+        subject: subject-1
+        text: Je suis sur que tu l'a bien mérité !!!
+        creationDate: "2015-05-12 23:28:56"
+        
+    comment-4:
+        user: user-michel-lb
+        subject: subject-2
+        text: Tu l'as fait exprès !!!
+        creationDate: "2015-05-12 23:28:56"
+        
+    comment-4:
+        user: user-tortue-geniale
+        subject: subject-2
+        text: LOOOOOOOOOL ;))
+        creationDate: "2015-05-12 23:28:56"
+        
+    comment-5:
+        user: user-misstoto
+        subject: subject-3
+        text: En effet, ç'est dur dur. Bon courage
+        creationDate: "2015-05-12 23:28:56"
+        
+    comment-6:
+        user: user-canaillou
+        subject: subject-3
+        text: o_O
+        creationDate: "2015-05-12 23:28:56"
+        
+    comment-7:
+        user: user-white-house
+        subject: subject-4
+        text: Tu n'as vraiment pas de chance
+        creationDate: "2015-05-12 23:28:56"
+        
+    comment-8:
+        user: user-michel-lb
+        subject: subject-4
+        text: Comme quoi ça n'arrive pas qu'à moi
+        creationDate: "2015-05-12 23:28:56"
+        
+    comment-9:
+        user: user-michel-lb
+        subject: subject-5
+        text: hahahahH
+        creationDate: "2015-05-11 23:28:56"
+        
+    comment-9:
+        user: user-canaillou
+        subject: subject-5
+        text: Je crois que c'est pas bon pour toi !!
+        creationDate: "2015-05-11 23:28:56"
+        
+    comment-10:
+        user: user-joe
+        subject: subject-5
+        text: Pas cool tout ça
+        creationDate: "2015-05-11 23:28:56"
+        
+    comment-11:
+        user: user-joe
+        subject: subject-6
+        text: Snif snif
+        creationDate: "2015-05-11 23:28:56"
+        
+    comment-12:
+        user: user-tyler-durden
+        subject: subject-6
+        text: Alors ça !!!!!! 
+        creationDate: "2015-05-11 23:28:56"
+        
+    comment-13:
+        user: user-petite-licorne
+        subject: subject-7
+        text: Je ne suis pas sur que je trouve ça triste
+        creationDate: "2015-05-11 23:28:56"
+        
+    comment-14:
+        user: user-canaillou
+        subject: subject-7
+        text: La vie parfois, ç'est nul !!!!
+        creationDate: "2015-05-11 23:28:56"

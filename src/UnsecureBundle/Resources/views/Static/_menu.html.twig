@@ -1,0 +1,26 @@
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+      	<a class="navbar-brand" href="{{ path('unsecure_homepage') }}">Последние новости</a>
+	    <a class="navbar-brand" href="{{ path('unsecure_contact') }}">связаться с нами</a>
+	    {% if sessionUser is not null %}
+            <a class="navbar-brand" href="{{ path('unsecure_mynews') }}">Мои статьи</a>
+    	{% endif %}
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        {% if sessionUser is null %}
+            <li><a href="{{ path('unsecure_loginpage') }}">войти</a></li>
+        {% else %}
+            <li><a href="#">привет {{ sessionUser.firstName }} {{ sessionUser.lastName }}</a></li>
+            <li><a href="{{ path('unsecure_logout') }}">Выйти</a></li>
+        {% endif %}
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>

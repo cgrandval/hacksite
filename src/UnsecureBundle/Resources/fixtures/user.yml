@@ -1,0 +1,112 @@
+model: UnsecureBundle\Entity\User
+fixtures:
+    user-tristoune:
+        pseudo:         tristoune
+        firstName:      Britney
+        lastName:       Lopez
+        address:        78 rue de Hollywood
+        email:          BritBrit@gmail.com
+        gender:         f
+        password:       5f4dcc3b5aa765d61d8327deb882cf99
+        creationDate:   "2011-03-21 12:35:26"
+        
+    user-admin:
+        pseudo:         admin
+        firstName:      Cyrille
+        lastName:       Grandval
+        address:        ~
+        email:          ~
+        gender:         m
+        password:       9afb34fcc25a8f20629fda14d9279009
+        creationDate:   "2011-03-21 12:35:26"
+        admin:          1
+        
+    user-greedoo:
+        pseudo:         greedoo
+        firstName:      ~
+        lastName:       ~
+        address:        ~
+        email:          ~
+        gender:         ~
+        password:       5f4dcc3b5aa765d61d8327deb882cf99
+        creationDate:   "2011-03-21 12:35:26"
+        
+    user-joe:
+        pseudo:         Joe L'indien
+        firstName:      Nicolas
+        lastName:       Sorkozy
+        address:        Ancienne rue de l'Elysee
+        email:          petitNico@gmail.gouv
+        gender:         m
+        password:       827ccb0eea8a706c4c34a16891f84e7b
+        creationDate:   "2015-04-04 11:08:26"
+        
+    user-tyler-durden:
+        pseudo:         tylerdurden
+        firstName:      Tyler
+        lastName:       Durden
+        address:        56 rue du fight club
+        email:          whereismymind@gmail.com
+        gender:         m
+        password:       ab4f63f9ac65152575886860dde480a1
+        creationDate:   "2015-07-04 11:08:26"
+        
+    user-michel-lb:
+        pseudo:         michelLB_
+        firstName:      Michel
+        lastName:       Sardouille
+        address:        8 rue des années 70
+        email:          michelsardouille@gmail.com
+        gender:         m
+        password:       b6edd10559b20cb0a3ddaeb15e5267cc
+        creationDate:   "2015-06-04 11:08:26"
+        
+    user-tortue-geniale:
+        pseudo:         Tortue Géniale
+        firstName:      Akiro
+        lastName:       Toriyomo
+        address:        4 rue des Peupliers
+        email:          Kameha@yaho.com
+        gender:         m
+        password:       aa8af3ebe14831a7cd1b6d1383a03755
+        creationDate:   "2015-09-04 11:08:26"
+        
+    user-petite-licorne:
+        pseudo:         petite licorne
+        firstName:      Sophie
+        lastName:       Marceau
+        address:        78 rue de la Boom
+        email:          SosoBoomBoom@gmail.com
+        gender:         f
+        password:       c3581516868fb3b71746931cac66390e
+        creationDate:   "2015-06-03 11:08:26"
+        
+    user-canaillou:
+        pseudo:         canaillou
+        firstName:      Francois
+        lastName:       Grolande
+        address:        1 rue de l Elysée
+        email:          flamby@gmail.com
+        gender:         m
+        password:       e5940a633eb6baf7221c9d48afa4b614
+        creationDate:   "2015-06-04 11:08:26"
+        
+    user-misstoto:
+        pseudo:         MissTotodu75
+        firstName:      Katy
+        lastName:       Perri
+        address:        67 rue des MTV Awards
+        email:          KK@hotmail.com
+        gender:         f
+        password:       3225d24edf6b0aecf7e58f22c4219d93
+        creationDate:   "2015-02-04 11:08:26"
+        
+    user-white-house:
+        pseudo:         White House
+        firstName:      Hillary
+        lastName:       Clint
+        address:        2 rue de la maison blanche
+        email:          killMonica@gmail.com
+        gender:         f
+        password:       e8375d7cd983efcbf956da5937050ffc
+        creationDate:   "2015-01-04 11:08:26"

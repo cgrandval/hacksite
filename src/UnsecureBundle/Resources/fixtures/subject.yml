@@ -1,0 +1,47 @@
+model: UnsecureBundle\Entity\Subject
+fixtures:
+    subject-1:
+        user: user-greedoo
+        text: |
+            Voilà. Après 9 ans de vie commune, 3 ans de mariage passés, 1 grossesse stoppée à 5SG et un transfert d'embryons congelés qui s'est réélé négatif, mon mari en a choisi une autre ...
+            La semaine du 30 mai au 05 juin a été la plus affreuse de ma vie. Le lundi j'apprend que le transfert n'a pas abouti, le mardi j'enterre ma grand-mère, le dimanche j'apprend qu'il en choisit une autre et qu'il veut me quitter.
+            Je suis au bout du rouleau, en pleine déprime. Je me réveille chaques matin en me disant que ce n'est qu'un cauchemard, mais non ... J'ai l'impression qu'il est mort. LE pire est qu'il s'inquiète pour moi. Culpabilise-t-il ? Comprend-t-il ce que je ressent ?
+            Je veux qu'il revienne ... Suis-je trop conne ? ou simplement amoureuse ?
+            Je meurs a petit feux !!!
+        creationDate: "2011-06-21 12:35:26"
+        
+    subject-2:
+        user: user-white-house
+        text: |
+            Mon frère pour me taquiner : "Tu devrais acheter ça pour ta moustache !" Et mon père pour me défendre "T'inquiète, il dit ça car il est jaloux que t'en aies plus que lui" Merci, je suis rassurée.
+        creationDate: "2015-05-04 11:08:26"
+        
+    subject-3:
+        user: user-petite-licorne
+        text: |
+            Selfie de ce week end,  mon père a longtemps fixé ma photo, puis moi, pour finalement conclure que : "L'année 2012 était une période capillairement difficile, non ?"
+        creationDate: "2015-05-04 11:08:26"
+        
+    subject-4:
+        user: user-misstoto
+        text: |
+            Aujourd'hui, je me suis rendu compte que mon imagination débordante avait des conséquences même sur mon régime.
+        creationDate: "2015-05-04 11:08:26"
+        
+    subject-5:
+        user: user-petite-licorne
+        text: |
+            Aujourd'hui, vous connaissez tous le coup de la tartine qui tombe du mauvais côté. Moi, c'est le coup de la serviette hygiénique usagée qui tombe du mauvais côté. Sur le tapis blanc de la salle de bain chez ma belle-mère.
+        creationDate: "2015-05-04 11:08:26"
+        
+    subject-6:
+        user: user-canaillou
+        text: |
+            Premier repas un peu stressant avec les beaux-parents.  C'est seulement quand le pied de table a bougé que j'ai compris que c'était la jambe de mon beau-père que je frottais frénétiquement entre les miennes depuis quelques minutes.
+        creationDate: "2015-05-04 11:08:26"
+        
+    subject-7:
+        user: user-white-house
+        text: |
+            Mon copain m'a quitté, par message et du téléphone de ma sœur.
+        creationDate: "2015-05-03 11:08:26"
